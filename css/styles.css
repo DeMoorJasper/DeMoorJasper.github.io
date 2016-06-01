@@ -8,8 +8,8 @@ body {
 	font-size: 1.05em;
 	line-height: 1.25em;
 	font-family: "Montserrat", Helvetica, Arial;
-	background: #f9f9f9;
-	color: #555;
+	background: #808080;
+	color: #fff;
 }
 
 p {
@@ -39,6 +39,7 @@ header {
 	left: 0;
 	border-bottom: 4px solid #000;
 	z-index: 100;
+	display: none;
 }
 
 #logo{
@@ -98,9 +99,39 @@ p {
 	margin-bottom: 20px;
 }
 
+#ScrollTXT {
+	border: 5px solid #fff;
+	width: 50%;
+	margin: calc(50% - 220px)  auto;
+}
+
+#ScrollTXT p {
+	font-family: 'montserrat';
+	font-size: 13pt;
+	margin: 0 50px 50px 90px;
+}
+
+#ScrollTXT h1 {
+	color: #fff;
+	margin: 50px 50px 0 90px;
+}
+
+#contact {
+	position: fixed;
+	bottom: 50px;
+	left: 100px;
+}
+
+#contact a{
+	color: #fff;
+}
+
+#contact a:hover {
+	color: #000;
+}
+
 /*MEDIA QUERY*/
 @media only screen and (max-width : 900px) {
-
 	header {
 		position: absolute;
 	}
@@ -131,3 +162,32 @@ p {
 	nav:hover ul {
 		display: block;
 	}
+}
+
+/*MEDIA QUERY*/
+@media only screen and (max-width : 550px) {
+	#logo {
+		font-size: 22pt;
+	}
+}
+
+/*MEDIA QUERY*/
+@media only screen and (max-width : 400px) {
+	#logo {
+		font-size: 16pt;
+	}
+}
+
+/*MEDIA QUERY*/
+@media only screen and (max-width : 320px) {
+	#logo {
+		font-size: 12pt;
+	}
+}
+
+/*MEDIA QUERY*/
+@media only screen and (max-width : 270px) {
+	#logo {
+		display: none;
+	}
+}
