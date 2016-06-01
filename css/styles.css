@@ -8,7 +8,7 @@ body {
 	font-size: 1.05em;
 	line-height: 1.25em;
 	font-family: "Montserrat", Helvetica, Arial;
-	background: #808080;
+	background: #808080 url('../img/jh.png') repeat;
 	color: #fff;
 }
 
