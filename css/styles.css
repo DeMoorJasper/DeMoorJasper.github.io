@@ -162,6 +162,10 @@ p {
 	nav:hover ul {
 		display: block;
 	}
+	
+	#ScrollTXT {
+		border: none;
+	}
 }
 
 /*MEDIA QUERY*/
