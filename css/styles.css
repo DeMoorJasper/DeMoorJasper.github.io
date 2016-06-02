@@ -102,6 +102,7 @@ p {
 #home {
 	height: 100%;
 	width: 100%;
+	display: block;
 }
 
 #ScrollTXT {
@@ -122,13 +123,14 @@ p {
 }
 
 #contact {
-	position: fixed;
-	bottom: 50px;
-	left: 100px;
+	display: block;
+	height: 100%;
+	width: 100%;
 }
 
 #contact a{
 	color: #fff;
+	margin: calc(50% - 50px) auto;
 }
 
 #contact a:hover {
