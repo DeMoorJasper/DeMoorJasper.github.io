@@ -137,6 +137,12 @@ p {
 	color: #000;
 }
 
+#about {
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+
 /*MEDIA QUERY*/
 @media only screen and (max-width : 900px) {
 	header {
