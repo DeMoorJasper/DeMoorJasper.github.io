@@ -1,11 +1,11 @@
-var Time2 = 10;
+var Time2 = 8;
 
 $( document ).ready(function() {
   var h1Values = $( "#ScrollTXT h1" ).text();
   var pValues = $( "#ScrollTXT p" ).text();
 
   var h1Processed = '';
-  var Time = 300;
+  var Time = 250;
   var Counter = 0;
 
   $("#ScrollTXT h1").text(" ");
