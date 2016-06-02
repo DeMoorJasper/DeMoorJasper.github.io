@@ -99,6 +99,11 @@ p {
 	margin-bottom: 20px;
 }
 
+#home {
+	height: 100%;
+	width: 100%;
+}
+
 #ScrollTXT {
 	border: 5px solid #fff;
 	width: 50%;
