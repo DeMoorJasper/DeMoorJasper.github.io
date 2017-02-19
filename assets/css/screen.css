@@ -213,6 +213,8 @@ footer h1 {
     min-width: 500px;
     min-height: 500px;
     text-align: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .portfolio article img {
