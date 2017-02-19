@@ -210,15 +210,15 @@ footer h1 {
 
 .portfolio article {
     display: inline-block;
-    min-width: 500px;
-    min-height: 500px;
+    min-width: 350px;
+    min-height: 350px;
     text-align: center;
     margin-right: 10px;
     margin-bottom: 10px;
 }
 
 .portfolio article img {
-    width: 100%;
+    width: 350px;
 }
 
 .socials a {
@@ -235,10 +235,10 @@ footer h1 {
 .overlay {
     position: absolute;
     background: none;
-    width: 525px;
-    height: 525px;
+    width: 375px;
+    height: 375px;
     z-index: 50;
-    margin-top: -530px;
+    margin-top: -380px;
     display: none;
     background: rgba(0,0,0,0.6);
 }
@@ -248,15 +248,15 @@ footer h1 {
 }
 
 .portfolio article:hover img {
-    width: 525px;
+    width: 375px;
 }
 
 .portfolio article h3 {
     position: absolute;
     color: #ffffff;
     z-index: 100;
-    margin-top: 50px;
-    margin-left: 50px;
+    margin-top: 25px;
+    margin-left: 25px;
     font-size: 2rem;
     display: none;
     border-bottom: 2px solid #ffffff;
@@ -267,10 +267,10 @@ footer h1 {
     position: absolute;
     color: #ffffff;
     z-index: 100;
-    margin-top: 100px;
-    margin-left: 50px;
+    margin-top: 75px;
+    margin-left: 25px;
     display: none;
-    width: 400px;
+    width: 300px;
     text-align: left;
 }
 
