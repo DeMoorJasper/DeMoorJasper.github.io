@@ -379,6 +379,10 @@ footer h1 {
         width: 100%;
         display: block;
     }
+    
+    .slider {
+        display: none;
+    }
 
     .service p {
         width: 100%;
