@@ -185,6 +185,10 @@ footer h1 {
     display: inline-block;
 }
 
+main.center {
+    text-align: center;
+}
+
 .button:hover {
     background: #ffffff;
     color: #000000;
@@ -284,11 +288,11 @@ footer h1 {
 }
 
 .service {
-    display: block;
-    float: left;
+    display: inline-block;
     width: 500px;
     text-align: center;
     padding: 0 25px;
+    height: 400px;
 }
 
 .service img {
@@ -298,6 +302,7 @@ footer h1 {
 .services {
     margin: 0 auto;
     width: auto;
+    text-align: center;
 }
 
 @media screen and (max-width: 1200px) {
