@@ -240,20 +240,16 @@ main.center {
 .overlay {
     position: absolute;
     background: none;
-    width: 375px;
-    height: 375px;
+    width: 350px;
+    height: 350px;
     z-index: 50;
-    margin-top: -380px;
+    margin-top: -356px;
     display: none;
     background: rgba(0,0,0,0.6);
 }
 
 .portfolio article:hover .overlay {
     display: block;
-}
-
-.portfolio article:hover img {
-    width: 375px;
 }
 
 .portfolio article h3 {
