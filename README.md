@@ -1,2 +1,4 @@
-# JasperDeMoor.github.io
-JasperDM Design and development solutions
+# Jasperdemoor.me
+```
+Just a centralised website to link to all my past works and open source projects.
+```
