@@ -11,7 +11,7 @@ html, body {
 main {
     display: table-cell;
     vertical-align: middle;
-    width: 350px;
+    max-width: 350px;
     margin: 0 auto;
     text-align: center;
     font-family: sans-serif;
