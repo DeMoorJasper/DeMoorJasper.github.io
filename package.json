@@ -1,0 +1,20 @@
+{
+  "name": "DeMoorJasper.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:DeMoorJasper/DeMoorJasper.github.io.git",
+  "author": "Jasper De Moor <jasperdemoor@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel ./src/index.html --out-dir ./dev-out/",
+    "build": "parcel ./src/index.html --out-dir ."
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.7.1"
+  },
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "styled-components": "^3.2.6"
+  }
+}
