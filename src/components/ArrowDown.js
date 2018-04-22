@@ -12,6 +12,7 @@ const ArrowContainer = styled.div`
 const SVG = styled.svg`
   display: block;
   margin: 0 auto;
+  margin-top: 1rem;
 `;
 
 export default class App extends Component {
