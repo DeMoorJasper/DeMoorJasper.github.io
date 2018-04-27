@@ -51,22 +51,61 @@ export default class MacbookAnimation extends Component {
   constructor() {
     super();
     this.state = {
-      renderContent: false
+      renderedContent: ['']
     }
+
+    this.currentLine = 0;
+    this.currentCharacter = 0;
+
     this.handleMouseEnter = this.handleMouseEnter.bind(this);
     this.handleMouseLeave = this.handleMouseLeave.bind(this);
+    this.typeNext = this.typeNext.bind(this);
+  }
+
+  componentWillUnmount() {
+    this.clearTypeInterval();
+  }
+
+  clearTypeInterval() {
+    if (this.typeInterval) {
+      clearInterval(this.typeInterval);
+      this.typeInterval = null;
+    }
+  }
+
+  typeNext() {
+    let renderedContent = this.state.renderedContent;
+    if (this.props.content.length >= renderedContent.length) {
+      let i = renderedContent.length - 1;
+      if (this.props.content[i].length === renderedContent[i].length) {
+        i++;
+        if (i === this.props.content.length) {
+          return this.clearTypeInterval();
+        }
+        renderedContent[i] = '';
+      }
+      renderedContent[i] += this.props.content[i].substring(renderedContent[i].length, renderedContent[i].length + 1);
+      this.setState({ renderedContent });
+    }
+  }
+
+  startTypeInterval() {
+    this.typeNext();
+    this.typeInterval = setInterval(this.typeNext, 25);
+  }
+
+  showNextLine() {
+    this.setState({ shownItems });
   }
 
   handleMouseEnter(evt) {
-    if (this.props.content) {
-      this.setState({ renderContent: true });
+    if (Array.isArray(this.props.content)) {
+      this.startTypeInterval();
     }
   }
 
   handleMouseLeave(evt) {
-    if (this.props.content) {
-      this.setState({ renderContent: false });
-    }
+    // Do nothing
   }
 
   render() {
@@ -80,9 +119,7 @@ export default class MacbookAnimation extends Component {
           </svg>
         </TopBar>
         <ScreenContent>
-          {this.state.renderContent && 
-          Array.isArray(this.props.content) && 
-          this.props.content.map((line, index) => <Line key={index}>{'> '}{line}</Line>)}
+          {this.state.renderedContent.map((line, index) => <Line key={index}>{'> '}{line}</Line>)}
         </ScreenContent>
       </Screen>
       <KeyBoard>
