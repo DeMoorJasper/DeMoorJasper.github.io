@@ -22,7 +22,7 @@ export default class Build extends Component {
         <MacbookAnimation content={[
           'ssh root@myserver.local', 
           'root: *********',
-          'git clone git@github.com:DeMoorJasper/awesome.git',
+          'git clone github.com/DeMoorJasper/awesome.git',
           'cd awesome',
           'yarn start',
           'Starting Application...',

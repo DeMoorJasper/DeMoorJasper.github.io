@@ -6,25 +6,33 @@ const MacbookContainer = styled.div`
 `;
 
 const Screen = styled.div`
-  border: 0.25rem solid #000000;
+  border: 0rem solid #000000;
   border-radius: 1rem 1rem 0 0;
   border-bottom: none;
-  height: 18rem;
-  width: 28rem;
-  background: #242424;
+  height: 16rem;
+  width: 26rem;
+  background: #000000;
   margin-left: 1rem;
-  padding: 1rem;
-  color: #ffffff;
+  padding: 2rem;
   font-family: 'Open Sans', Sans-Serif;
 `;
 
+const Desktop = styled.div`
+  background: #242424;
+  height: 100%;
+  color: #ffffff;
+`;
+
 const TopBar = styled.div`
-  height: 3rem;
+  height: 2rem;
   width: 100%;
+  background: #e0e0e0;
+  border-radius: 0.2rem;
 `;
 
 const ScreenContent = styled.div`
   margin-left: 0.5rem;
+  padding: 1rem 0.5rem;
 `;
 
 const KeyBoard = styled.div`
@@ -104,16 +112,18 @@ export default class MacbookAnimation extends Component {
   render() {
     return <MacbookContainer onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
       <Screen>
-        <TopBar>
-          <svg height="20" width="54">
-            <circle cx="10" cy="10" r="5" fill="#fc605c" />
-            <circle cx="25" cy="10" r="5" fill="#fdbc40" />
-            <circle cx="40" cy="10" r="5" fill="#34c749" />
-          </svg>
-        </TopBar>
-        <ScreenContent>
-          {this.state.renderedContent.map((line, index) => <Line key={index}>{'> '}{line}</Line>)}
-        </ScreenContent>
+        <Desktop>
+          <TopBar>
+            <svg height="20" width="54">
+              <circle cx="10" cy="10" r="5" fill="#fc605c" />
+              <circle cx="25" cy="10" r="5" fill="#fdbc40" />
+              <circle cx="40" cy="10" r="5" fill="#34c749" />
+            </svg>
+          </TopBar>
+          <ScreenContent>
+            {this.state.renderedContent.map((line, index) => <Line key={index}>{'> '}{line}</Line>)}
+          </ScreenContent>
+        </Desktop>
       </Screen>
       <KeyBoard>
         <Detailing />
