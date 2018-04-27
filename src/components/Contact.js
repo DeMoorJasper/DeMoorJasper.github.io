@@ -9,12 +9,12 @@ const HeaderElement = styled.footer`
   text-align: center;
 `;
 
-export default class App extends Component {
+export default class Contact extends Component {
   render() {
     return <Center>
       <HeaderElement>
         <H1>Say Hello 💬</H1>
-        <H2>Have a question? Wanna talk? Don't hesitate to contact me.</H2>
+        <H2>Have a question? Wanna talk? Want to work together on something? Don't hesitate to contact me.</H2>
         <Line />
         <Socials />
       </HeaderElement>

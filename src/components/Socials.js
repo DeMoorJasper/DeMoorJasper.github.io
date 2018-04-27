@@ -13,7 +13,7 @@ const A = styled.a`
   display: inline-block;
 `;
 
-export default class App extends Component {
+export default class Socials extends Component {
   render() {
     return <div>
       <A target="_blank" href="https://twitter.com/JasperDeMoor"><Twitter /></A>

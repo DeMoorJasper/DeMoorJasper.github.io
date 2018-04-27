@@ -15,7 +15,7 @@ const SVG = styled.svg`
   margin-top: 1rem;
 `;
 
-export default class App extends Component {
+export default class ArrowDown extends Component {
   constructor() {
     super();
     this.onClick = this.onClick.bind(this);
