@@ -54,9 +54,6 @@ export default class MacbookAnimation extends Component {
       renderedContent: ['']
     }
 
-    this.currentLine = 0;
-    this.currentCharacter = 0;
-
     this.handleMouseEnter = this.handleMouseEnter.bind(this);
     this.handleMouseLeave = this.handleMouseLeave.bind(this);
     this.typeNext = this.typeNext.bind(this);
@@ -64,6 +61,11 @@ export default class MacbookAnimation extends Component {
 
   componentWillUnmount() {
     this.clearTypeInterval();
+  }
+
+  startTypeInterval() {
+    this.typeNext();
+    this.typeInterval = setInterval(this.typeNext, 25);
   }
 
   clearTypeInterval() {
@@ -87,15 +89,6 @@ export default class MacbookAnimation extends Component {
       renderedContent[i] += this.props.content[i].substring(renderedContent[i].length, renderedContent[i].length + 1);
       this.setState({ renderedContent });
     }
-  }
-
-  startTypeInterval() {
-    this.typeNext();
-    this.typeInterval = setInterval(this.typeNext, 25);
-  }
-
-  showNextLine() {
-    this.setState({ shownItems });
   }
 
   handleMouseEnter(evt) {
