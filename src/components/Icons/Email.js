@@ -1,7 +1,7 @@
 import React,  { Component } from 'react';
-import styled from 'styled-components';
+import stylish from 'tiny-stylish-components';
 
-const SVG = styled.svg`
+const SVG = stylish.svg`
   width: 5rem;
   height: 5rem;
   &:hover {

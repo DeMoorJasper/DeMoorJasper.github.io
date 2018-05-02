@@ -1,10 +1,10 @@
 import React,  { Component } from 'react';
-import styled from 'styled-components';
+import stylish from 'tiny-stylish-components';
 
 import { Center90Height } from './styled/Containers';
 import { H1, H2, Line } from './styled/Elements';
 
-const HeaderElement = styled.header`
+const HeaderElement = stylish.header`
   text-align: center;
 `;
 

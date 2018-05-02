@@ -1,11 +1,11 @@
 import React,  { Component } from 'react';
-import styled from 'styled-components';
+import stylish from 'tiny-stylish-components';
 
 import { Center90Height, ResponsiveFlex } from './styled/Containers';
 import { H1, H2, Line } from './styled/Elements';
 import MacbookAnimation from './MacbookAnimation';
 
-const AlignLeft = styled.div`
+const AlignLeft = stylish.div`
   text-align: left;
   margin-left: 5rem;
   margin-top: 5rem;

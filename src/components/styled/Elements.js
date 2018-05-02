@@ -1,12 +1,12 @@
-import styled from 'styled-components';
+import stylish from 'tiny-stylish-components';
 
-exports.H1 = styled.h1`
+exports.H1 = stylish.h1`
   font-family: Tajawal, Sans-Serif;
   font-size: 4rem;
   margin-bottom: 1rem;
 `;
 
-exports.H2 = styled.h2`
+exports.H2 = stylish.h2`
   font-family: Tajawal, Sans-Serif;
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -15,13 +15,13 @@ exports.H2 = styled.h2`
   }
 `;
 
-exports.H3 = styled.h3`
+exports.H3 = stylish.h3`
   font-family: Tajawal, Sans-Serif;
   font-size: 2rem;
   margin-bottom: 1rem;
 `;
 
-exports.Line = styled.hr`
+exports.Line = stylish.hr`
   width: 40rem;
   height: 0.2rem;
   background: #000000;

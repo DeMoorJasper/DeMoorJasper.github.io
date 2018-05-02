@@ -1,6 +1,6 @@
-import styled, { css } from 'styled-components';
+import stylish, { css } from 'tiny-stylish-components';
 
-const Center = styled.article`
+const Center = stylish.article`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,11 +13,11 @@ exports.Center90Height = Center.extend`
   height: 90vh;
 `;
 
-exports.FullHeight = styled.div`
+exports.FullHeight = stylish.div`
   height: 100vh;
 `;
 
-exports.ResponsiveFlex = styled.div`
+exports.ResponsiveFlex = stylish.div`
   display: flex;
   flex-direction: row;
   @media (max-width: 80rem) {

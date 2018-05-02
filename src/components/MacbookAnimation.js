@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
+import stylish from 'tiny-stylish-components';
 
-const MacbookContainer = styled.div`
+const MacbookContainer = stylish.div`
   margin: 0 auto;
 `;
 
-const Screen = styled.div`
+const Screen = stylish.div`
   border: 0rem solid #000000;
   border-radius: 1rem 1rem 0 0;
   border-bottom: none;
@@ -17,32 +17,32 @@ const Screen = styled.div`
   font-family: 'Open Sans', Sans-Serif;
 `;
 
-const Desktop = styled.div`
+const Desktop = stylish.div`
   background: #242424;
   height: 100%;
   color: #ffffff;
 `;
 
-const TopBar = styled.div`
+const TopBar = stylish.div`
   height: 2rem;
   width: 100%;
   background: #e0e0e0;
   border-radius: 0.2rem;
 `;
 
-const ScreenContent = styled.div`
+const ScreenContent = stylish.div`
   margin-left: 0.5rem;
   padding: 1rem 0.5rem;
 `;
 
-const KeyBoard = styled.div`
+const KeyBoard = stylish.div`
   border: 0.25rem solid #000000;
   border-radius: 0 0 1rem 1rem;
   height: 1rem;
   width: 32rem;
 `;
 
-const Detailing = styled.div`
+const Detailing = stylish.div`
   border: 0.2rem solid #000000;
   border-radius: 0 0 1rem 1rem;
   border-top: none;
@@ -51,7 +51,7 @@ const Detailing = styled.div`
   margin-left: 13.5rem;
 `;
 
-const Line = styled.p`
+const Line = stylish.p`
   margin-bottom: 0.2rem;
 `;
 
