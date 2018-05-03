@@ -19,7 +19,7 @@ export default class Socials extends Component {
       <A target="_blank" href="https://twitter.com/JasperDeMoor"><Twitter /></A>
       <A target="_blank" href="https://github.com/DeMoorJasper"><GitHub /></A>
       <A target="_blank" href="https://www.linkedin.com/in/jasperdm/"><LinkedIn /></A>
-      <A target="_blank" href="https://medium.com/@jasperdm"><Medium /></A>
+      <A target="_blank" href="https://medium.com/@jasperdemoor"><Medium /></A>
       <A target="_blank" href="mailto:jasperdemoor@gmail.com"><Email /></A>
     </div>;
   }
