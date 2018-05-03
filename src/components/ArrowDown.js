@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
+import stylish from 'tiny-stylish-components';
 
 import { H3 } from './styled/Elements';
 
-const ArrowContainer = styled.div`
+const ArrowContainer = stylish.div`
   display: flex;
   justify-content: center;
   align-items: center;
 `;
 
-const SVG = styled.svg`
+const SVG = stylish.svg`
   display: block;
   margin: 0 auto;
   margin-top: 1rem;

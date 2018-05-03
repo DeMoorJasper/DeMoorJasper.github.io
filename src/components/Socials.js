@@ -1,5 +1,5 @@
 import React,  { Component } from 'react';
-import styled from 'styled-components';
+import stylish from 'tiny-stylish-components';
 
 import Twitter from './Icons/Twitter';
 import GitHub from './Icons/GitHub';
@@ -7,7 +7,7 @@ import LinkedIn from './Icons/LinkedIn';
 import Medium from './Icons/Medium';
 import Email from './Icons/Email';
 
-const A = styled.a`
+const A = stylish.a`
   margin-left: 2rem;
   margin-right: 2rem;
   display: inline-block;

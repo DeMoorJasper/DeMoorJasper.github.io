@@ -1,11 +1,11 @@
 import React,  { Component } from 'react';
-import styled from 'styled-components';
+import stylish from 'tiny-stylish-components';
 
 import { Center } from './styled/Containers';
 import { H1, H2, Line } from './styled/Elements';
 import Socials from './Socials';
 
-const HeaderElement = styled.footer`
+const HeaderElement = stylish.footer`
   text-align: center;
 `;
 

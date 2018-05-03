@@ -1,5 +1,4 @@
 import React,  { Component } from 'react';
-import styled from 'styled-components';
 
 import { FullHeight } from './styled/Containers';
 import Header from './Header';
