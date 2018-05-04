@@ -72,8 +72,10 @@ export default class MacbookAnimation extends Component {
   }
 
   startTypeInterval() {
-    this.typeNext();
-    this.typeInterval = setInterval(this.typeNext, 25);
+    if (!this.typeInterval) {
+      this.typeNext();
+      this.typeInterval = setInterval(this.typeNext, 25);
+    }
   }
 
   clearTypeInterval() {
