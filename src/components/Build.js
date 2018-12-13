@@ -32,7 +32,7 @@ export default class Build extends Component {
         ]} />
         <AlignLeft>
           <H1>I build things 🛠</H1>
-          <H2>In my free time I also build and maintain some cool projects on <a target="_blank" href="https://github.com/DeMoorJasper">GitHub</a>.</H2>
+          <H2>Checkout my <a target="_blank" href="https://github.com/DeMoorJasper">GitHub</a> to see some projects I work/worked on.</H2>
           <Line />
         </AlignLeft>
       </ResponsiveFlex>

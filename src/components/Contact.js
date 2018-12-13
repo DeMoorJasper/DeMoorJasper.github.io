@@ -14,7 +14,7 @@ export default class Contact extends Component {
     return <Center>
       <HeaderElement>
         <H1>Say Hello 💬</H1>
-        <H2>Have a question? Wanna talk? Want to work together on something? Don't hesitate to contact me.</H2>
+        <H2>Want to have a chat about anything, feel free to contact me.</H2>
         <Line />
         <Socials />
       </HeaderElement>
