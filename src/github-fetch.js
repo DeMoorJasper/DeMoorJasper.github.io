@@ -21,8 +21,6 @@ const EXTERNAL_REPOS = [
 
 let githubProjectsContainer = document.getElementById("open-source-projects");
 
-githubProjectsContainer.innerHTML = "Loading projects...";
-
 function createList(repos) {
   let res = "<ul>";
   repos = repos.sort((a, b) => b["stargazers_count"] - a["stargazers_count"]);
