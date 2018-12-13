@@ -1,3 +1,5 @@
+import '@babel/polyfill';
+
 import React,  { Component } from 'react';
 
 import { FullHeight } from './styled/Containers';

@@ -6,15 +6,18 @@
   "author": "Jasper De Moor <jasperdemoor@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "parcel ./src/index.html --out-dir ./dev-out/",
-    "build": "parcel build ./src/index.html --out-dir . --public-url ./"
+    "start": "parcel ./src/*.html --out-dir ./dev-out/",
+    "build": "parcel build ./src/*.html --out-dir . --public-url ./"
   },
   "devDependencies": {
     "parcel-bundler": "^1.10.3"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.0.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5",
     "tiny-stylish-components": "^0.0.7"
   }
 }
