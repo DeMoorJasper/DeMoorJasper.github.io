@@ -16,6 +16,10 @@ const EXTERNAL_REPOS = [
   {
     org: "oSoc17",
     repo: "oasis-hackathon"
+  },
+  {
+    org: "adobe",
+    repo: "spectrum-css"
   }
 ];
 
