@@ -6,11 +6,11 @@
   "author": "Jasper De Moor <jasperdemoor@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "parcel ./src/*.html --out-dir ./dev-out/",
+    "start": "parcel ./src/*.html --out-dir ./dev-out/ --no-hmr",
     "build": "parcel build ./src/*.html --out-dir . --public-url ./"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.10.3"
+    "parcel-bundler": "^1.12.1"
   },
   "dependencies": {
     "@babel/polyfill": "^7.0.0",

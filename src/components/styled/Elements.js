@@ -1,5 +1,14 @@
 import stylish from 'tiny-stylish-components';
 
+exports.A = stylish.a`
+  text-decoration: none;
+  color: #000000;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
 exports.H1 = stylish.h1`
   font-family: Tajawal, Sans-Serif;
   font-size: 4rem;
