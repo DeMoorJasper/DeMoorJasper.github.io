@@ -10,15 +10,13 @@
     "build": "parcel build ./src/*.html --out-dir dist --public-url ./",
     "now-build": "yarn build"
   },
-  "devDependencies": {
-    "parcel-bundler": "^1.12.1"
-  },
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "request": "^2.88.0",
     "request-promise-native": "^1.0.5",
-    "tiny-stylish-components": "^0.0.8"
+    "tiny-stylish-components": "^0.0.8",
+    "parcel-bundler": "^1.12.1"
   }
 }
